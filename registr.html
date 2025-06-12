@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РецептоП - Вход и регистрация</title>
+     <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="form-tabs">
+            <div class="tab active" data-form="login">Войти</div>
+            <div class="tab" data-form="register">Регистрация</div>
+        </div>
+
+        <div class="form-container">
+            <!-- Форма входа -->
+            <form id="loginForm" class="active-form">
+                <h2>Добро пожаловать!</h2>
+                
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required placeholder="example@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Пароль</label>
+                    <input type="password" id="loginPassword" required placeholder="••••••••">
+                </div>
+
+                <div class="form-group">
+                    <a href="#" class="toggle-link" data-form="forgot">Забыли пароль?</a>
+                </div>
+
+                <button type="submit">Войти</button>
+            </form>
+
+            <!-- Форма регистрации -->
+            <form id="registerForm">
+                <h2>Создайте аккаунт</h2>
+                
+                <div class="form-group">
+                    <label for="registerName">Имя</label>
+                    <input type="text" id="registerName" required placeholder="Иван Иванов">
+                </div>
+
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required placeholder="example@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="registerPassword">Пароль</label>
+                    <input type="password" id="registerPassword" required placeholder="••••••••">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Подтвердите пароль</label>
+                    <input type="password" id="confirmPassword" required placeholder="••••••••">
+                </div>
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="reg.js"></script>
+      
+   
+</body>
+</html>
