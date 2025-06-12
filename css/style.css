@@ -592,7 +592,7 @@ footer {
   gap: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .burger-menu {
     display: flex;
   }
